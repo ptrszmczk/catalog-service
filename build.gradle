@@ -25,15 +25,15 @@ configurations {
 }
 
 dependencies {
+	implementation 'org.assertj:assertj-core'
+	implementation 'org.flywaydb:flyway-core'
+	implementation 'org.junit.jupiter:junit-jupiter'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-validation'
-	implementation 'org.junit.jupiter:junit-jupiter'
-	implementation 'org.assertj:assertj-core'
-	implementation 'org.springframework.cloud:spring-cloud-starter-config'
-	implementation 'org.springframework.retry:spring-retry'
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
-	implementation 'org.flywaydb:flyway-core'
+	implementation 'org.springframework.cloud:spring-cloud-starter-config'
+	implementation 'org.springframework.retry:spring-retry'
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.springframework.boot:spring-boot-starter-webflux'
